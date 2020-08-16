@@ -1,21 +1,15 @@
 import React from 'react';
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import normalize from 'react-native-normalize';
-import {Icon} from 'react-native-elements';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const EmoneyMenu = (props) => {
   return (
     <TouchableOpacity style={[props.style, styles.container]}>
       <View style={styles.icon}>
-        <Icon
-          raised
-          name="heartbeat"
-          type="font-awesome"
-          color="#f50"
-          onPress={() => console.log('hello')}
-        />
+        <Icon name="qrcode-scan" size={normalize(30)} color="black" />
       </View>
-      <Text style={styles.text}>Hey!</Text>
+      <Text style={styles.text}>{props.text}</Text>
     </TouchableOpacity>
   );
 };

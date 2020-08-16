@@ -8,13 +8,14 @@ const Emoney = () => {
   return (
     <View elevation={5} style={styles.emoney_container}>
       <View style={styles.emoney_balance}>
-        <Text style={styles.emoney_balance_txt}>Saldo Saya: </Text>
+        <Text style={styles.emoney_balance_txt}>Saldo: </Text>
         <Text style={styles.emoney_balance_money}>Rp 1.800.000</Text>
       </View>
       <View style={styles.emoney_balance_menu}>
-        <EmoneyMenu style={{flex: 1, alignItems: 'center'}} />
-        <EmoneyMenu style={{flex: 1, alignItems: 'center'}} />
-        <EmoneyMenu style={{flex: 1, alignItems: 'center'}} />
+        <EmoneyMenu text="Pay" style={{flex: 1, alignItems: 'center'}} />
+        <EmoneyMenu text="Receive" style={{flex: 1, alignItems: 'center'}} />
+        <EmoneyMenu text="Top Up" style={{flex: 1, alignItems: 'center'}} />
+        <EmoneyMenu text="Withdraw" style={{flex: 1, alignItems: 'center'}} />
       </View>
     </View>
   );
